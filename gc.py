@@ -241,12 +241,8 @@ def main():
         st.markdown('</div>', unsafe_allow_html=True)
         st.markdown("<div style='height: 20px;'></div>", unsafe_allow_html=True)
     else:
-        st.info("🌟 Be the first to start the global conversation!")
+        st.info("Be the first to start the global conversation!")
         st.markdown("**Welcome to Global Chat!**")
-        st.markdown("- Chat with all users in real-time")
-        st.markdown("- Your messages appear on the right")
-        st.markdown("- Others' messages appear on the left")
-        st.markdown("- Messages refresh automatically every 3 seconds")
 
     # Chat input
     if global_prompt := st.chat_input("Type your message to the global chat..."):
@@ -269,4 +265,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
